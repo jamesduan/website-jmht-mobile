@@ -15,6 +15,13 @@ $envcolor: #eaaf37;
     flex-direction: column;
 }
 
+@mixin image-resize {
+    -webkit-background-size:cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .App {
     text-align: center;
 
@@ -63,7 +70,7 @@ $envcolor: #eaaf37;
                 justify-content:center;
                 align-items: center; 
                 margin-top: 15px;
-                height: 180px;
+                height: 130px;
             }
             .tea {
                 margin-top: 20px;
@@ -71,7 +78,7 @@ $envcolor: #eaaf37;
                 @include row();
                 justify-content:center;
                 align-items: center; 
-                height: 180px;
+                height: 130px;
             }
             .design {
                 margin-top: 20px;
@@ -79,19 +86,56 @@ $envcolor: #eaaf37;
                 @include row();
                 justify-content:center;
                 align-items: center; 
-                height: 180px;
+                height: 130px;
             }
         }
 
         .App-home-product {
+            margin-top: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+            .title {
+                font-size: 20px;
+                margin-top: 10px;
+            }
 
             .tea-series {
-                
+                margin-top: 15px;
+                // margin: 0 auto;
+                width: 100%;
+                .slider {
+
+                }
             }
             .r-series {
+                margin-top: 15px;
+            }
+        }
 
+        .App-home-process {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+
+            .title {
+                font-size: 20px;
+            }
+
+            .wrapper {
+                @include row();
+                flex-wrap: wrap;
+
+                .item {
+                    width: 90px;
+                    height: 90px;
+                    margin-left: 10px;
+                    border-radius: 50%;
+                    background-color: #eaaf37;
+                    margin-top: 20px;
+                }
             }
         }
     }
-
 }
