@@ -1,0 +1,97 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+$envcolor: #eaaf37;
+
+@mixin row {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+}
+
+@mixin column {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+}
+
+.App {
+    text-align: center;
+
+    .App-header {
+        background-color: white;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        // border: 1px solid black;
+        // text-align: left;
+
+        .App-logo {
+            // height: 46px;
+            width: 120px;
+            float: left;
+            // border: 1px solid black;
+        }
+
+        .App-menu {
+            width: 35px;
+            float: right;
+            // border: 1px solid black;
+        }
+    }
+
+    .App-home {
+        .App-home-banner {
+            margin: 0 auto;
+            // padding: 40px;
+            width: 100%;
+            // border: 1px solid black;
+        }
+
+        .App-home-aboutus {
+            margin-top: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+            .title {
+                font-size: 20px;
+            }
+            .brand {
+                background-color: $envcolor;
+                @include row();
+                justify-content:center;
+                align-items: center; 
+                margin-top: 15px;
+                height: 180px;
+            }
+            .tea {
+                margin-top: 20px;
+                background-color: $envcolor;
+                @include row();
+                justify-content:center;
+                align-items: center; 
+                height: 180px;
+            }
+            .design {
+                margin-top: 20px;
+                background-color: $envcolor;
+                @include row();
+                justify-content:center;
+                align-items: center; 
+                height: 180px;
+            }
+        }
+
+        .App-home-product {
+
+            .tea-series {
+                
+            }
+            .r-series {
+
+            }
+        }
+    }
+
+}
