@@ -12,7 +12,8 @@ import './scss/App.scss';
 class App extends Component {
   render() {
     const settings = {
-      dots: true
+      infinite: true,
+      speed: 800
     }
 
     const teaSettings = {
@@ -22,6 +23,7 @@ class App extends Component {
       slidesToScroll: 3,
       initialSlide: 0,
     }
+
     return (
       <div className="App">
         <header className="App-header">
@@ -74,12 +76,36 @@ class App extends Component {
           <div className="App-home-process">
             <div className="title">合作流程</div>
             <div className="wrapper">
-              <div className="item">1</div>
-              <div className="item">2</div>
-              <div className="item">3</div>
-              <div className="item">4</div>
-              <div className="item">5</div>
-              <div className="item">6</div>
+              <div className="item">
+                <div className="circle"></div>
+                <div className="title">项目咨询</div>
+                <div className="text">前期沟通，对公司及项目进行了解</div>
+              </div>
+              <div className="item">
+                <div className="circle"></div>
+                <div className="title">实地考察</div>
+                <div className="text">合作商有意向后实地考察公司了解项目，进行业务交流</div>
+              </div>
+              <div className="item">
+                <div className="circle"></div>
+                <div className="title">资格审核</div>
+                <div className="text">总部对合作商进行资格审核，确保项目双赢</div>
+              </div>
+              <div className="item">
+                <div className="circle"></div>
+                <div className="title">合作签约</div>
+                <div className="text">正式签约成为城市合伙人，合作商应提供相关证件和交纳相关费用</div>
+              </div>
+              <div className="item">
+                <div className="circle"></div>
+                <div className="title">总部培训</div>
+                <div className="text">总部对合伙人进行技术及经营管理培训，并提供相关设备、原料、选址、门店设计等相关支持</div>
+              </div>
+              <div className="item">
+                <div className="circle"></div>
+                <div className="title">新店开业</div>
+                <div className="text">门店试营业，总部在经营期间提供驻店督导门店运营，门店正式营业</div>
+              </div>
             </div>
           </div>
         </div>

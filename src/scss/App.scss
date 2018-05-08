@@ -2,6 +2,7 @@
 @import "~slick-carousel/slick/slick-theme.css";
 
 $envcolor: #eaaf37;
+$textcolor: #585755;
 
 @mixin row {
     display: flex;
@@ -126,14 +127,30 @@ $envcolor: #eaaf37;
             .wrapper {
                 @include row();
                 flex-wrap: wrap;
+                justify-content: space-around;
 
                 .item {
-                    width: 90px;
-                    height: 90px;
                     margin-left: 10px;
-                    border-radius: 50%;
-                    background-color: #eaaf37;
                     margin-top: 20px;
+                    width: 90px;
+
+                    .circle {
+                        width: 90px;
+                        height: 90px;
+                        border-radius: 50%;
+                        background-color: #eaaf37;    
+                    }
+
+                    .title {
+                        font-size: 18px;
+                        margin-top: 10px;
+                    }
+
+                    .text {
+                        font-size: 14px;
+                        margin-top: 5px;
+                        color: $textcolor;
+                    }
                 }
             }
         }
