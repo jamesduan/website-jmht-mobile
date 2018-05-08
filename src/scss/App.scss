@@ -114,7 +114,7 @@ $textcolor: #585755;
         }
 
         .App-home-process {
-            margin-top: 40px;
+            margin-top: 30px;
             margin-bottom: 40px;
             padding-left: 20px;
             padding-right: 20px;
@@ -150,6 +150,8 @@ $textcolor: #585755;
                         font-size: 14px;
                         margin-top: 5px;
                         color: $textcolor;
+                        letter-spacing: 0;
+                        line-height: 28px;
                     }
                 }
             }

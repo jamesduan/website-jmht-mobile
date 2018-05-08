@@ -52,23 +52,60 @@ class App extends Component {
             <div className="title">茶饮系列</div>
             <div className="tea-series">
               <Slider {...teaSettings} className="slider">
-                <img src={p01} alt="p01" />
-                <img src={p01} alt="p01" />
-                <img src={p01} alt="p01" />
-                <img src={p01} alt="p01" />
-                <img src={p01} alt="p01" />
-                <img src={p01} alt="p01" />
+                <div style={{width: 90, height: 90}}>
+                  <img src={p01} alt="p01" style={{width: 90}}/>
+                  <p>柠檬初上</p>
+                </div>
+                <div style={{width: 90, height: 90}}>
+                  <img src={p01} alt="p01" style={{width: 90}}/>
+                  <p>柠檬初上</p>
+                </div>
+                <div style={{width: 90, height: 90}}>
+                  <img src={p01} alt="p01" style={{width: 90}}/>
+                  <p>柠檬初上</p>
+                </div>
+                <div style={{width: 90, height: 90}}>
+                  <img src={p01} alt="p01" style={{width: 90}}/>
+                  <p>柠檬初上</p>
+                </div>
+                <div style={{width: 90, height: 90}}>
+                  <img src={p01} alt="p01" style={{width: 90}}/>
+                  <p>柠檬初上</p>
+                </div>
+                <div style={{width: 90, height: 90}}>
+                  <img src={p01} alt="p01" style={{width: 90}}/>
+                  <p>柠檬初上</p>
+                </div>
               </Slider>
             </div>
             <div className="title">软欧包系列</div>
             <div className="r-series">
               <Slider {...teaSettings} className="slider">
-                <img src={r07} alt="p01" />
-                <img src={r07} alt="p01" />
-                <img src={r07} alt="p01" />
-                <img src={r07} alt="p01" />
-                <img src={r07} alt="p01" />
-                <img src={r07} alt="p01" />
+                <div style={{width: 90, height: 90}}>
+                    <img src={r07} alt="p01" style={{width: 90}}/>
+                    <p>花样年华</p>
+                </div>
+                <div style={{width: 90, height: 90}}>
+                    <img src={r07} alt="p01" style={{width: 90}}/>
+                    <p>花样年华</p>
+                </div>
+                <div style={{width: 90, height: 90}}>
+                    <img src={r07} alt="p01" style={{width: 90}}/>
+                    <p>花样年华</p>
+                </div>
+                <div style={{width: 90, height: 90}}>
+                    <img src={r07} alt="p01" style={{width: 90}}/>
+                    <p>花样年华</p>
+                </div>
+                <div style={{width: 90, height: 90}}>
+                    <img src={r07} alt="p01" style={{width: 90}}/>
+                    <p>花样年华</p>
+                </div>
+                <div style={{width: 90, height: 90}}>
+                    <img src={r07} alt="p01" style={{width: 90}}/>
+                    <p>花样年华</p>
+                </div>
+
               </Slider>
             </div>
           </div>
