@@ -24,17 +24,34 @@ $tabsback: #fafafa;
     background-size: cover;
 }
 
+@mixin container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
 .middle-text {
     font-size: 16px;
 }
 
 .title {
-    font-size: 18px;
+    font-size: 20px;
     color: $textcolor;
+}
+
+.sub-title {
+    font-family: STSongti-SC-Light;
+                    font-size: 16px;
+                    color: #999999;
+                    letter-spacing: 0;
+                    line-height: 28px;
 }
 
 .normal-text {
     font-size: 14px;
+    line-height: 28px;
 }
 
 .normal-color {
@@ -78,17 +95,35 @@ $tabsback: #fafafa;
     }
 
     .App-aboutus {
-        
-        .banner {
-            margin: 63px auto;
-            width: 100%;
-            height: 100%;
-        }
-
         .sub-container {
             padding-left: 20px;
             padding-right: 20px;
             @include topmove;
+            padding-top: 20px;
+
+            .title {
+                text-align: left;
+            }
+
+            .normal-text {
+                text-align: left;
+            }
+
+            .clearfix {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .line {
+                @include row();
+
+                .time {
+                    flex: 0 0 20%;
+                }
+                .event {
+                    flex: 0 0 80%;
+                }
+            }
         }
         
     }
@@ -102,7 +137,7 @@ $tabsback: #fafafa;
         }
 
         .App-home-aboutus {
-            margin-top: 40px;
+            // margin-top: 40px;
             padding-left: 20px;
             padding-right: 20px;
             .title {
@@ -118,19 +153,91 @@ $tabsback: #fafafa;
             }
             .tea {
                 margin-top: 20px;
-                background-color: $envcolor;
+                // background-color: $envcolor;
                 @include row();
                 justify-content:center;
                 align-items: center; 
-                height: 130px;
+                height: 160px;
+                background-image: url("../images/chayi.png");
+                @include image-resize();
+
+                .left {
+                    width: 50%;
+                    height: 100%;
+
+                }
+                .right {
+                    width: 50%;
+                    height: 100%;
+                    background-color: white;
+                    z-index: 10;
+                    opacity: 0.75;
+                    @include column();
+                    // text-align: center;
+                    @include column();
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px;
+                }
+            }
+
+            .r {
+                margin-top: 20px;
+                // background-color: $envcolor;
+                @include row();
+                justify-content:center;
+                align-items: center; 
+                height: 160px;
+                background-image: url("../images/ruanoubao.png");
+                @include image-resize();
+
+                .left {
+                    width: 50%;
+                    height: 100%;
+
+                }
+                .right {
+                    width: 50%;
+                    height: 100%;
+                    background-color: white;
+                    z-index: 10;
+                    opacity: 0.75;
+                    @include column();
+                    // text-align: center;
+                    @include column();
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px;
+                }
             }
             .design {
                 margin-top: 20px;
-                background-color: $envcolor;
+                // background-color: $envcolor;
                 @include row();
                 justify-content:center;
                 align-items: center; 
-                height: 130px;
+                height: 250px;
+                background-image: url("../images/wecando-b.png");
+                @include image-resize();
+
+                .left {
+                    width: 50%;
+                    height: 100%;
+
+                }
+                .right {
+                    width: 50%;
+                    height: 100%;
+                    background-color: white;
+                    z-index: 10;
+                    opacity: 0.75;
+                    @include column();
+                    // text-align: center;
+                    @include column();
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px;
+                }
             }
         }
 
@@ -229,12 +336,94 @@ $tabsback: #fafafa;
         }
     }
 
+    .App-news {
+        .news-container {
+            @include container();
+
+            .content {
+                margin-bottom: 50px;
+                .clearfix {
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    .App-product {
+        .sub-container {
+            padding-left: 20px;
+            padding-right: 20px;
+            @include topmove;
+            padding-top: 0px;
+            // height: 1000px;
+            height: auto;
+            margin-bottom: 400px;
+            .title {
+                margin-top: 40px;
+                div {
+                    
+                }
+            }
+
+            .images {
+                margin-top: 20px;
+                @include row();
+                flex-wrap: wrap;
+                justify-content: space-between;
+                // align-items: center;
+                // justify-content: center;
+
+                .box {
+                    // border: 1px solid black;
+                    @include column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 32%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .App-join {
+        .join-container {
+            @include topmove;
+            padding: 20px;
+            .box {
+                margin-top: 20px;
+
+                .t {
+                    font-size: 16px;
+                    color: $textcolor;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+    }
+
+    .App-contact {
+        .contact-container {
+            @include container();
+
+            .num {
+                font-size: 32px;
+                color: $envcolor;
+            }
+        }
+    }
+
     .App-footer {
         background: #F2F2F5;
-        height: 100%;
-        height: 60px;
+        // height: 100%;
+        width: 100%;
+        // height: 60px;
         @include column();
         justify-content: center;
+        p {
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
     }
 }
 
@@ -267,7 +456,7 @@ $tabs-height: 45px;
     @include row();
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .tabs {
@@ -286,7 +475,22 @@ $tabs-height: 45px;
         text-decoration:none;
         color: $envcolor;
         border-bottom-color: $envcolor;
-        border-bottom-width: 2px;
+        border-bottom-width: 3px;
         border-bottom-style: solid;
     }
+}
+
+.banner {
+    margin: 65px auto;
+    width: 100%;
+    height: 100%;
+}
+
+.fullimg {
+    width: 100%;
+    height: 100%;
+}
+
+.clear {
+    text-align: left;
 }

@@ -3,7 +3,13 @@ import React, { Component } from 'react';
 import Slider from 'react-slick'
 
 import p01 from './images/p01.jpg'
+import p02 from './images/p02.jpg'
 // import p03 from './images/p03.jpg'
+// import p04 from './images/p04.jpg'
+import p05 from './images/p05.jpg'
+import p06 from './images/p06.jpg'
+import p07 from './images/p07.jpg'
+import p08 from './images/p08.jpg'
 import r07 from './images/r07.jpg'
 import process01 from './images/flow01.png'
 import process02 from './images/flow02.png'
@@ -16,6 +22,8 @@ import aboutus from './images/about_company.png'
 import news01 from './images/new01.png'
 import news02 from './images/new02.png'
 import news03 from './images/new03.png'
+import about from './images/about.png'
+// import chayi from './images/chayi.png'
 
 export default class Home extends Component {
     constructor(props) {
@@ -50,9 +58,32 @@ export default class Home extends Component {
 
                 <div className="App-home-aboutus">
                     <div className="title">关于九亩花田</div>
-                    <div className="brand">品牌介绍</div>
-                    <div className="tea">茶饮系列</div>
-                    <div className="design">形象设计/VI设计/门店设计</div>
+                    <img src={about} alt="" style={{ width: "100%", height: "100%", marginTop: 20 }} />
+                    <p className="normal-text normal-color">2015年本源集团着手新中式健康茶饮技术研发、茶饮品牌运营策划及茶饮技术团队建设，历时两年，2017年本源新中式健康茶饮品牌"九亩花田"正式投入市场，开启中国茶饮5.0时代。</p>
+                    <p className="title">茶饮系列</p>
+                    <div className="tea">
+                        <div className="left"></div>
+                        <div className="right normal-text normal-color">
+                            <div>茶香喉，沁心田</div>
+                            <div>味芳醇，意缱绻</div>
+                            <div>九亩方圆，阳光一片</div>
+                            <div>花田锦绣，芳华明媚</div>
+                        </div>
+                    </div>
+                    <p className="title">软欧包系列</p>
+                    <div className="r">
+                        <div className="left"></div>
+                        <div className="right normal-text normal-color">
+                            <div>2017年本源新中式健康茶饮品牌"九亩花田"正式投入市场，开启中国茶饮5.0时代。</div>
+                        </div>
+                    </div>
+                    <p className="title">形象设计/VI设计/门店设计</p>
+                    <div className="design">
+                        <div className="left"></div>
+                        <div className="right normal-text normal-color">
+                            <div>2015年本源集团着手新中式健康茶饮技术研发、茶饮品牌运营策划及茶饮技术团队建设，历时两年，2017年本源新中式健康茶饮品牌”九亩花田 ” 正式投入市场，开启中国茶饮5.0时代。</div>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="App-home-product">
@@ -64,31 +95,27 @@ export default class Home extends Component {
                                 <p className="normal-text" style={{ width: imgWidth }}>柠檬初上</p>
                             </div>
                             <div style={{ width: imgWidth, height: 90 }}>
-                                <img src={p01} alt="p01" style={{ width: imgWidth }} />
+                                <img src={p02} alt="p01" style={{ width: imgWidth }} />
+                                <p className="normal-text" style={{ width: imgWidth }}>柠檬初上</p>
+                            </div>
+                            {/* <div style={{ width: imgWidth, height: 90 }}>
+                                <img src={p04} alt="p01" style={{ width: imgWidth }} />
+                                <p className="normal-text" style={{ width: imgWidth }}>柠檬初上</p>
+                            </div> */}
+                            <div style={{ width: imgWidth, height: 90 }}>
+                                <img src={p05} alt="p01" style={{ width: imgWidth }} />
                                 <p className="normal-text" style={{ width: imgWidth }}>柠檬初上</p>
                             </div>
                             <div style={{ width: imgWidth, height: 90 }}>
-                                <img src={p01} alt="p01" style={{ width: imgWidth }} />
+                                <img src={p06} alt="p01" style={{ width: imgWidth }} />
                                 <p className="normal-text" style={{ width: imgWidth }}>柠檬初上</p>
                             </div>
                             <div style={{ width: imgWidth, height: 90 }}>
-                                <img src={p01} alt="p01" style={{ width: imgWidth }} />
+                                <img src={p07} alt="p01" style={{ width: imgWidth }} />
                                 <p className="normal-text" style={{ width: imgWidth }}>柠檬初上</p>
                             </div>
                             <div style={{ width: imgWidth, height: 90 }}>
-                                <img src={p01} alt="p01" style={{ width: imgWidth }} />
-                                <p className="normal-text" style={{ width: imgWidth }}>柠檬初上</p>
-                            </div>
-                            <div style={{ width: imgWidth, height: 90 }}>
-                                <img src={p01} alt="p01" style={{ width: imgWidth }} />
-                                <p className="normal-text" style={{ width: imgWidth }}>柠檬初上</p>
-                            </div>
-                            <div style={{ width: imgWidth, height: 90 }}>
-                                <img src={p01} alt="p01" style={{ width: imgWidth }} />
-                                <p className="normal-text" style={{ width: imgWidth }}>柠檬初上</p>
-                            </div>
-                            <div style={{ width: imgWidth, height: 90 }}>
-                                <img src={p01} alt="p01" style={{ width: imgWidth }} />
+                                <img src={p08} alt="p01" style={{ width: imgWidth }} />
                                 <p className="normal-text" style={{ width: imgWidth }}>柠檬初上</p>
                             </div>
                             <div style={{ width: imgWidth, height: 90 }}>

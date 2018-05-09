@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 import Drawer from 'react-motion-drawer';
 import { Link } from 'react-router-dom'
 import logo from './images/logo.svg';
@@ -28,7 +29,6 @@ class App extends Component {
 
   render() {
 
-    console.log(this.state.openRight)
     const linkColor = '#eaaf37'
     return (
       <div className={"App"}>
