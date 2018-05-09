@@ -1,16 +1,16 @@
-
 import React, { Component } from 'react';
 
-class JoinUS extends Component {
+
+class News extends Component {
     constructor(props) {
         super(props);
-        this.state = {  };
+        this.state = {};
     }
     render() {
         return (
-            <div>Join</div>            
+            <div>news</div>
         );
     }
 }
 
-export default JoinUS;
+export default News;
