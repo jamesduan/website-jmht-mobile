@@ -23,11 +23,26 @@ $textcolor: #585755;
     background-size: cover;
 }
 
+.middle-text {
+    font-size: 16px;
+}
+.normal-text {
+    font-size: 14px;
+}
+
+.normal-color {
+    color: $textcolor;
+}
+
 .App {
     text-align: center;
 
     .App-header {
-        background-color: white;
+        position:fixed; 
+        z-index:100; 
+        top:0; 
+        width:94%; 
+        background-color:rgba($color: white, $alpha: 0.8);
         display: flex;
         flex-flow: row;
         align-items: center;
@@ -52,7 +67,7 @@ $textcolor: #585755;
 
     .App-home {
         .App-home-banner {
-            margin: 0 auto;
+            margin: 63px auto;
             // padding: 40px;
             width: 100%;
             // border: 1px solid black;
@@ -105,12 +120,37 @@ $textcolor: #585755;
                 // margin: 0 auto;
                 width: 100%;
                 .slider {
-
+                    div {
+                        p {
+                            color: $textcolor;
+                        }
+                    }
                 }
             }
             .r-series {
                 margin-top: 15px;
+                .slider {
+                    div {
+                        p {
+                            color: $textcolor;
+                        }
+                    }
+                }
             }
+        }
+
+        .App-home-news {
+            margin-top: 30px;
+            margin-bottom: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+
+            .title {
+                font-size: 20px;
+            }
+
+
         }
 
         .App-home-process {
@@ -138,11 +178,14 @@ $textcolor: #585755;
                         width: 90px;
                         height: 90px;
                         border-radius: 50%;
-                        background-color: #eaaf37;    
+                        background-color: #eaaf37;
+                        .process-img {
+                            width: 100%;
+                        }
                     }
 
                     .title {
-                        font-size: 18px;
+                        font-size: 16px;
                         margin-top: 10px;
                     }
 
@@ -157,4 +200,20 @@ $textcolor: #585755;
             }
         }
     }
+
+    .App-footer {
+        background: #F2F2F5;
+        height: 100%;
+        height: 60px;
+        @include column();
+        justify-content: center;
+    }
+}
+
+
+.drawer-panel {
+    width: 100%;
+    height: 100%;
+    background: #F9F9F9;
+    boxShadow: rgba(0, 0, 0, 0.188235) 0px 10px 20px, rgba(0, 0, 0, 0.227451) 0px 6px 6px
 }
