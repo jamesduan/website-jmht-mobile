@@ -199,7 +199,7 @@ class JoinUS extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            switchName: 'advantage'
+            switchName: 'joinprocess'
         };
     }
     render() {
