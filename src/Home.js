@@ -239,20 +239,20 @@ export default class Home extends Component {
                     <img style={{ width: "100%", height: "100%", marginTop: 20 }} alt="" src={news01} />
                     <div className="normal-color">
                         <p className="middle-text">九亩花田：现萃茶汤，让茶饮好喝的密秘</p>
-                        <p className="normal-text">茶要好喝，原料是很重要，明前的茶叶要比谷雨的茶叶要好，春茶要比秋茶要好，
-                            高山的茶要比平地茶要好…<Link to={path1}>详情</Link></p>
+                        <p className="normal-text tel">茶要好喝，原料是很重要，明前的茶叶要比谷雨的茶叶要好，春茶要比秋茶要好，
+                            高山的茶要比平地茶要好…<Link to={path1}>查看详情</Link></p>
                     </div>
 
                     <img style={{ width: "100%", height: "100%", marginTop: 20 }} alt="" src={news02} />
                     <div className="normal-color">
                         <p className="middle-text">九亩花田:一杯好茶+一份独特=十分好喝</p>
-                        <p className="normal-text">一杯茶饮+加一份软欧包的模式，在市面上已经火了，势如破竹，深受广大消费者喜爱。 九亩花田以健康+品质+差异化+网红茶的新经营模式，在众多茶饮品牌中形成差异化竞争优势， 全面开启中国茶饮5.0时代...<Link to={path2}>详情</Link></p>
+                        <p className="normal-text tel">一杯茶饮+加一份软欧包的模式，在市面上已经火了，势如破竹，深受广大消费者喜爱。 九亩花田以健康+品质+差异化+网红茶的新经营模式，在众多茶饮品牌中形成差异化竞争优势， 全面开启中国茶饮5.0时代...<Link to={path2}>查看详情</Link></p>
                     </div>
 
                     <img style={{ width: "100%", height: "100%", marginTop: 20 }} alt="" src={news03} />
                     <div className="normal-color">
                         <p className="middle-text">软欧包为什么这么火，九亩花田为你说答案</p>
-                        <p className="normal-text">如今，随着人们的生活水平不断提高，消费观念也在不断的提升，特别是在吃这方面，人们不再像以前那样， 只求吃得饱，而是更讲究如何吃得好，对食物的口感和健康品质有着绝对的挑剔，所以， 像软欧包这种面包中的劳斯莱斯，一经推出，就受到大众的强烈追捧...<Link to={path3}>详情</Link></p>
+                        <p className="normal-text tel">如今，随着人们的生活水平不断提高，消费观念也在不断的提升，特别是在吃这方面，人们不再像以前那样， 只求吃得饱，而是更讲究如何吃得好，对食物的口感和健康品质有着绝对的挑剔，所以， 像软欧包这种面包中的劳斯莱斯，一经推出，就受到大众的强烈追捧...<Link to={path3}>查看详情</Link></p>
                     </div>
                 </div>
 
