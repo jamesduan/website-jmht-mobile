@@ -20,7 +20,7 @@ class ContactUS extends Component {
                     <p className="normal-text normal-color">总机：020-86000678</p>
                     <p className="normal-text normal-color">传真：020-86000108</p>
                     <p className="normal-text normal-color">地址：中国.广州市白云区机场路1962号国际单位E栋602</p>
-                    <img src={map} alt="" className="fullimg"/>
+                    <img src={map} alt="" className="fullimg" style={{ marginBottom: 40}}/>
                 </div>
             </div>
         );
