@@ -43,10 +43,10 @@ $tabsback: #fafafa;
 
 .sub-title {
     font-family: STSongti-SC-Light;
-                    font-size: 16px;
-                    color: #999999;
-                    letter-spacing: 0;
-                    line-height: 28px;
+    font-size: 16px;
+    color: #999999;
+    letter-spacing: 0;
+    line-height: 28px;
 }
 
 .normal-text {
@@ -450,13 +450,25 @@ $tabsback: #fafafa;
 $tabs-height: 45px;
 
 @mixin tabs-item {
-    width: 90px;
+    @media (min-width: 320px) {
+        width: 70px;
+        font-size: 13px;
+    }
+
+    @media (min-width: 375px) {
+        width: 90px;
+        font-size: 14px;
+    }
+    @media (min-width: 414px) {
+        width: 90px;
+        font-size: 15px;
+    }
     height: $tabs-height;
     float: left;
     @include row();
     justify-content: center;
     align-items: center;
-    font-size: 14px;
+    margin-right: 10px;
 }
 
 .tabs {
@@ -493,4 +505,12 @@ $tabs-height: 45px;
 
 .clear {
     text-align: left;
+}
+
+.top13 {
+    margin-top: 13px;
+}
+
+.top20 {
+    margin-top: 20px;
 }

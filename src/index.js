@@ -6,7 +6,8 @@ import App from './App';
 import initReactFastclick from 'react-fastclick';
 
 import {
-    HashRouter as Router,
+    // HashRouter as Router,
+    BrowserRouter as Router
 } from 'react-router-dom'
 
 ReactDOM.render(<Router><App /></Router>, document.getElementById('root'));

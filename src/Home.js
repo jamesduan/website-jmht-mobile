@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
 
 import p01 from './images/p01.jpg'
@@ -11,12 +11,12 @@ import p06 from './images/p06.jpg'
 import p07 from './images/p07.jpg'
 import p08 from './images/p08.jpg'
 import r07 from './images/r07.jpg'
-import process01 from './images/flow01.png'
-import process02 from './images/flow02.png'
-import process03 from './images/flow03.png'
-import process04 from './images/flow04.png'
-import process05 from './images/flow05.png'
-import process06 from './images/flow06.png'
+// import process01 from './images/flow01.png'
+// import process02 from './images/flow02.png'
+// import process03 from './images/flow03.png'
+// import process04 from './images/flow04.png'
+// import process05 from './images/flow05.png'
+// import process06 from './images/flow06.png'
 import './scss/App.scss';
 import aboutus from './images/about_company.png'
 import news01 from './images/new01.png'
@@ -32,6 +32,9 @@ export default class Home extends Component {
     }
 
     render() {
+        const path1 = {pathname: '/news', query: { anchor: 'news001'}}
+        const path2 = {pathname: '/news', query: { anchor: 'news002'}}
+        const path3 = {pathname: '/news', query: { anchor: 'news003'}}
         const settings = {
             infinite: true,
             speed: 800
@@ -66,7 +69,7 @@ export default class Home extends Component {
                         <div className="right normal-text normal-color">
                             <div>茶香喉，沁心田</div>
                             <div>味芳醇，意缱绻</div>
-                            <div>九亩方圆，阳光一片</div>
+                            <div>九亩方圆，春风十里</div>
                             <div>花田锦绣，芳华明媚</div>
                         </div>
                     </div>
@@ -172,7 +175,7 @@ export default class Home extends Component {
                     </div>
                 </div>
 
-                <div className="App-home-process">
+                {/* <div className="App-home-process">
                     <div className="title">合作流程</div>
                     <div className="wrapper">
                         <div className="item">
@@ -218,9 +221,9 @@ export default class Home extends Component {
                             <div className="text">门店试营业，总部在经营期间提供驻店督导门店运营，门店正式营业</div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
-                <div className="App-home-aboutus">
+                <div className="App-home-aboutus top20">
                     <div className="title">关于我们</div>
                     <div className="content normal-text normal-color">
                         <p>20年专注健康生活服务产业</p>
@@ -235,20 +238,21 @@ export default class Home extends Component {
 
                     <img style={{ width: "100%", height: "100%", marginTop: 20 }} alt="" src={news01} />
                     <div className="normal-color">
-                        <p className="middle-text">人活一壶茶</p>
-                        <p className="normal-text">不能想象，乡下的老茶馆若是消失了，那人们还怎么活下去。那茶叶，粗的；那茶壶，不但粗，还拙笨。窑场上的废壶，瘪的无…</p>
+                        <p className="middle-text">九亩花田：现萃茶汤，让茶饮好喝的密秘</p>
+                        <p className="normal-text">茶要好喝，原料是很重要，明前的茶叶要比谷雨的茶叶要好，春茶要比秋茶要好，
+                            高山的茶要比平地茶要好…<Link to={path1}>详情</Link></p>
                     </div>
 
                     <img style={{ width: "100%", height: "100%", marginTop: 20 }} alt="" src={news02} />
                     <div className="normal-color">
-                        <p className="middle-text">茶为席魂，心饮为上</p>
-                        <p className="normal-text">茶，解渴清心，以品为上。茶滋于水，水籍乎器。茶汤无形，无器不盛。器，为茶之父，道由器传。由茶和器而入的茶道，是…</p>
+                        <p className="middle-text">九亩花田:一杯好茶+一份独特=十分好喝</p>
+                        <p className="normal-text">一杯茶饮+加一份软欧包的模式，在市面上已经火了，势如破竹，深受广大消费者喜爱。 九亩花田以健康+品质+差异化+网红茶的新经营模式，在众多茶饮品牌中形成差异化竞争优势， 全面开启中国茶饮5.0时代...<Link to={path2}>详情</Link></p>
                     </div>
 
                     <img style={{ width: "100%", height: "100%", marginTop: 20 }} alt="" src={news03} />
                     <div className="normal-color">
-                        <p className="middle-text">人活一壶茶</p>
-                        <p className="normal-text">不能想象，乡下的老茶馆若是消失了，那人们还怎么活下去。那茶叶，粗的；那茶壶，不但粗，还拙笨。窑场上的废壶，瘪的无…</p>
+                        <p className="middle-text">软欧包为什么这么火，九亩花田为你说答案</p>
+                        <p className="normal-text">如今，随着人们的生活水平不断提高，消费观念也在不断的提升，特别是在吃这方面，人们不再像以前那样， 只求吃得饱，而是更讲究如何吃得好，对食物的口感和健康品质有着绝对的挑剔，所以， 像软欧包这种面包中的劳斯莱斯，一经推出，就受到大众的强烈追捧...<Link to={path3}>详情</Link></p>
                     </div>
                 </div>
 

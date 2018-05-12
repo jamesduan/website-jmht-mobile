@@ -9,6 +9,12 @@ import sp01 from './images/join_sp1.png'
 import sp02 from './images/join_sp2.png'
 import sp03 from './images/join_sp3.png'
 import sp04 from './images/join_sp4.png'
+import process01 from './images/flow01.png'
+import process02 from './images/flow02.png'
+import process03 from './images/flow03.png'
+import process04 from './images/flow04.png'
+import process05 from './images/flow05.png'
+import process06 from './images/flow06.png'
 
 const Advantage = (props) => {
     return (
@@ -135,6 +141,59 @@ const Support = (props) => {
     )
 }
 
+const JoinProcess = () => {
+    return (
+        <div className="join-container">
+           <div className="App-home-process">
+                    <div className="wrapper">
+                        <div className="item top20">
+                            <div className="circle">
+                                <img src={process01} alt="process01" className="process-img" />
+                            </div>
+                            <div className="title top13">项目咨询</div>
+                            <div className="text normal-text normal-color top13" >前期沟通，对公司及项目进行了解</div>
+                        </div>
+                        <div className="item top20" >
+                            <div className="circle">
+                                <img src={process02} alt="process02" className="process-img" />
+                            </div>
+                            <div className="title top13">实地考察</div>
+                            <div className="text normal-text normal-color top13">合作商有意向后实地考察公司了解项目，进行业务交流</div>
+                        </div>
+                        <div className="item top20">
+                            <div className="circle">
+                                <img src={process03} alt="process03" className="process-img" />
+                            </div>
+                            <div className="title top13">资格审核</div>
+                            <div className="text normal-text normal-color top13">总部对合作商进行资格审核，确保项目双赢</div>
+                        </div>
+                        <div className="item top20">
+                            <div className="circle">
+                                <img src={process04} alt="process04" className="process-img" />
+                            </div>
+                            <div className="title top13">合作签约</div>
+                            <div className="text normal-text normal-color top13">正式签约成为城市合伙人，合作商应提供相关证件和交纳相关费用</div>
+                        </div>
+                        <div className="item top20">
+                            <div className="circle">
+                                <img src={process05} alt="process05" className="process-img" />
+                            </div>
+                            <div className="title top13">总部培训</div>
+                            <div className="text top13 normal-text normal-color">总部对合伙人进行技术及经营管理培训，并提供相关设备、原料、选址、门店设计等相关支持</div>
+                        </div>
+                        <div className="item top20">
+                            <div className="circle">
+                                <img src={process06} alt="process06" className="process-img" />
+                            </div>
+                            <div className="title top13">新店开业</div>
+                            <div className="text top13 normal-color normal-text">门店试营业，总部在经营期间提供驻店督导门店运营，门店正式营业</div>
+                        </div>
+                    </div>
+                </div> 
+        </div>
+    )
+}
+
 
 class JoinUS extends Component {
     constructor(props) {
@@ -151,16 +210,18 @@ class JoinUS extends Component {
                 </div>
 
                 <div className="tabs">
-                    <Link to="/joinus/advantage" className={this.state.switchName === 'advantage' ? "link-plus" : "link"} onClick={() => { this.setState({ switchName: 'advantage' }) }}>合作优势</Link>
+                    <Link to="/joinus/joinprocess" className={this.state.switchName === 'joinprocess' ? "link-plus" : "link"} onClick={() => { this.setState({ switchName: 'joinprocess' }) }}>合作流程</Link>
                     <Link to="/joinus/aptitude" className={this.state.switchName === 'aptitude' ? "link-plus" : "link"} onClick={() => { this.setState({ switchName: 'aptitude' }) }}>资质要求</Link>
+                    <Link to="/joinus/advantage" className={this.state.switchName === 'advantage' ? "link-plus" : "link"} onClick={() => { this.setState({ switchName: 'advantage' }) }}>合作优势</Link>
                     <Link to="/joinus/support" className={this.state.switchName === 'support' ? "link-plus" : "link"} onClick={() => { this.setState({ switchName: 'support' }) }}>总部支持</Link>
                 </div>
 
                 <Switch>
+                    <Route exact path='/joinus/joinprocess' component={JoinProcess} />
                     <Route exact path='/joinus/advantage' component={Advantage} />
                     <Route path='/joinus/aptitude' component={Aptitude} />
                     <Route path='/joinus/support' component={Support} />
-                    <Redirect path="/joinus" to={{ pathname: "/joinus/advantage" }}></Redirect>
+                    <Redirect path="/joinus" to={{ pathname: "/joinus/joinprocess" }}></Redirect>
                 </Switch>
 
             </div>
