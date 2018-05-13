@@ -63,7 +63,8 @@ export default class Home extends Component {
 
         const teaSettings = {
             infinite: false,
-            speed: 500,
+            speed: 1000,
+            autoplaySpeed: 5000,
             slidesToShow: 3,
             slidesToScroll: 3,
             initialSlide: 0,
