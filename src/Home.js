@@ -85,7 +85,7 @@ export default class Home extends Component {
                 <div className="App-home-aboutus">
                     <div className="title">关于九亩花田</div>
                     <img src={about} alt="" style={{ width: "100%", height: "100%", marginTop: 20 }} />
-                    <p className="normal-text normal-color tel">
+                    <p className="normal-text normal-color tel" style={{ textIndent: "2em"}}>
                         九亩花田是本源健康产业有限公司旗下的餐饮品牌。提倡轻奢主义，以简约于形，时尚于心为产品内核，
                         向用户传达崇尚真心、真性的品牌内涵。在产品打造上，九亩花田依托母公司本源丰富的原茶资源，
                         全国独家自有1200平米茶饮技术研发中心，30名独立技术研发团队，以实力和匠心创造产品，
@@ -94,13 +94,13 @@ export default class Home extends Component {
                         九亩花田以健康、优质和差异化开启新中式茶饮5.0时代。
                     </p>
                     <p className="title" style={{ marginTop: 40 }}>茶饮系列</p>
-                    <p className="normal-text normal-color">
-                        冷泡工艺  独运匠心<br />
-                        为了茶叶的芳香完美释放<br />
-                        为了让茶叶与水融合实现完全的价值<br />
-                        九亩花田的技术团队研发全新的泡茶艺术<br />
-                        三大步骤：高温热水泡发 冷温锁香封味 真空高压萃取<br />
-                        三大效果：减少茶涩的口感  减少茶单宁酸的释放   有利于保护肠胃<br />
+                    <p className="normal-text normal-color tel" style={{ textIndent: "2em"}}>
+                        冷泡工艺，独运匠心，
+                        为了茶叶的芳香完美释放，
+                        为了让茶叶与水融合实现完全的价值，
+                        九亩花田的技术团队研发全新的泡茶艺术，
+                        三大步骤：高温热水泡发、冷温锁香封味、真空高压萃取
+                        三大效果：减少茶涩的口感，减少茶单宁酸的释放，有利于保护肠胃<br />
                     </p>
                     <div className="tea">
                         <div className="left"></div>
@@ -153,8 +153,8 @@ export default class Home extends Component {
                         </div>
 
                         <p className="title" style={{ marginTop: 40 }}>软欧包系列</p>
-                        <p className="normal-text normal-color">
-                            有生命的软欧包<br />
+                        <p className="normal-text normal-color tel" style={{ textIndent: "2em"}}>
+                            有生命的软欧包，
                             九亩花田软欧包采用天然水果酵母菌发酵的工艺，经过揉、擀、摔、压、切，道道工序。从面粉到面团，给予每一个软欧包新生命。成品的软欧包，混合着坚果、杂粮等材料的表皮，香香脆脆，吃起来口感丰富，特别香甜浓郁。
                         </p>
                         <div className="r">
@@ -248,7 +248,7 @@ export default class Home extends Component {
 
                 <div className="App-home-aboutus top40">
                     <div className="title">关于本源</div>
-                    <div className="tel content normal-text normal-color">
+                    <div className="tel content normal-text normal-color" style={{ textIndent: "2em"}}>
                         <p>广州本源健康产业有限公司，是一家多元化发展的企业，涉猎四大产业：餐饮连锁产业、餐饮原料产业、茶业产业、美妆服务产业。公司创办已有20多年历史，并于2015年在广州股权交易中心挂牌上市。公司本着“万物之本，包罗万象，源源不断”的品牌理念，以“上善若水“为品牌内涵，对产品严格品控，层层把关，致力于为消费者提供健康、有品质的生活。 2015年 本源集团着手新中式健康茶饮技术研发、茶饮品牌运营策划及茶饮技术团队建设，历时两年，2017年本源新中式健康茶饮品牌”九亩花田 ” 正式投入市场，开启中国茶饮5.0时代。本源人将以不变的执着和情怀，勇往向前，谱写新的华章。</p>
                     </div>
                     <img src={aboutus} alt="" style={{ width: "100%", height: "100%" }} />

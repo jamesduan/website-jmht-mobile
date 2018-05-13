@@ -38,6 +38,7 @@ import pnew08 from './images/pnew08.jpg'
 import rnew01 from './images/rnew01.png'
 import rnew02 from './images/rnew02.png'
 import rnew03 from './images/rnew03.png'
+import wecando from './images/wecando-b.png'
 // import rnew04 from './images/rnew04.png'
 
 
@@ -180,7 +181,7 @@ class Product extends Component {
         return (
             <div className="App-product">
                 <div className="banner">
-                    <img src={pbanner} alt="" style={{ height: "100%", width: "100%" }} />
+                    <img src={wecando} alt="" style={{ height: "100%", width: "100%" }} />
                 </div>
                 <div className="tabs">
                     <Link to="/product/ptea" className={this.state.switchName === 'ptea' ? "link-plus" : "link"} onClick={() => { this.setState({ switchName: 'ptea' }) }}>茶饮系列</Link>

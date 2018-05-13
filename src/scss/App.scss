@@ -59,8 +59,8 @@ $tabsback: #fafafa;
 }
 
 @mixin topmove {
-    position: relative;
-    top: -68px;
+    // position: relative;
+    // top: -68px;
 }
 
 .App {
@@ -474,7 +474,7 @@ $tabs-height: 45px;
 .tabs {
     background: $tabsback;
     height: $tabs-height;
-    @include topmove();
+    // @include topmove();
 
     .link {
         @include tabs-item();
@@ -540,3 +540,7 @@ $tabs-height: 45px;
 .bgf7f{width:100%;background-color:#f7ffff;}
 .bgef7{width:100%;background-color:#fffef7;}
 .bgfaf{width:100%;background-color:#fafafa;}
+
+.tei { text-indent: 2em }
+
+.border { border: 1px solid black;}
