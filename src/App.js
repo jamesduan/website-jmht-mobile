@@ -50,36 +50,36 @@ class App extends Component {
             <Link style={{ color: this.state.navClicked === "contact" ? linkColor : "" }} onClick={() => { this.setState({ navClicked: 'contact' }) }} to="/contactus" className="link">联系</Link>
           </ul>
         </Drawer>
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <img src={menu} className="App-menu" alt="menu" onClick={() => {
-              this.setState(() => {
-                let openRight = this.state.openRight
-                return { openRight: !openRight }
-              })
-            }} />
-          </header>
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <img src={menu} className="App-menu" alt="menu" onClick={() => {
+            this.setState(() => {
+              let openRight = this.state.openRight
+              return { openRight: !openRight }
+            })
+          }} />
+        </header>
 
-          <Switch>
-            <Route exact path='/' component={Home} />
-            <Route path='/product' component={Product} />
-            <Route path='/joinus' component={JoinUs} />
-            <Route path='/news' component={News} />
-            <Route path='/aboutus' component={AboutUS} />
-            <Route path='/contactus' component={ContactUS} />
-          </Switch>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route path='/product' component={Product} />
+          <Route path='/joinus' component={JoinUs} />
+          <Route path='/news' component={News} />
+          <Route path='/aboutus' component={AboutUS} />
+          <Route path='/contactus' component={ContactUS} />
+        </Switch>
 
-          <div className="App-footer normal-text normal-color">
-            <p>©2008-2018 广州本源健康产业有限公司 版权所有</p>
-          </div>
+        <div className="App-footer normal-text normal-color">
+          <p>©2008-2018 广州本源健康产业有限公司 版权所有</p>
+        </div>
       </div>
-        );
-      }
-    }
-    
+    );
+  }
+}
+
 const drawerStyle = {
-          background: "#F9F9F9",
-        boxShadow: "rgba(0, 0, 0, 0.188235) 0px 10px 20px, rgba(0, 0, 0, 0.227451) 0px 6px 6px"
-      }
-      
-      export default App;
+  background: "#F9F9F9",
+  boxShadow: "rgba(0, 0, 0, 0.188235) 0px 10px 20px, rgba(0, 0, 0, 0.227451) 0px 6px 6px"
+}
+
+export default App;

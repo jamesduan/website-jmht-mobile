@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
 
 // import p01 from './images/p01.jpg'
@@ -33,11 +33,15 @@ import rnew04 from './images/rnew04.png'
 // import process06 from './images/flow06.png'
 import './scss/App.scss';
 import aboutus from './images/about_company.png'
-import news01 from './images/new01.png'
-import news02 from './images/new02.png'
-import news03 from './images/new03.png'
+// import news01 from './images/new01.png'
+// import news02 from './images/new02.png'
+// import news03 from './images/new03.png'
 import about from './images/about.png'
 // import chayi from './images/chayi.png'
+import map from './images/map.png'
+import banner01 from './images/banner1.png'
+import banner02 from './images/banner2.png'
+import banner03 from './images/banner3.png'
 
 export default class Home extends Component {
     constructor(props) {
@@ -46,13 +50,13 @@ export default class Home extends Component {
     }
 
     render() {
-        const path1 = { pathname: '/news', query: { anchor: 'news001' } }
-        const path2 = { pathname: '/news', query: { anchor: 'news002' } }
-        const path3 = { pathname: '/news', query: { anchor: 'news003' } }
+        // const path1 = { pathname: '/news', query: { anchor: 'news001' } }
+        // const path2 = { pathname: '/news', query: { anchor: 'news002' } }
+        // const path3 = { pathname: '/news', query: { anchor: 'news003' } }
         const settings = {
             infinite: true,
             speed: 1000,
-            autoplaySpeed: 3000,
+            autoplaySpeed: 5000,
             autoplay: true,
             cssEase: "linear"
         }
@@ -70,12 +74,12 @@ export default class Home extends Component {
                 <div className="App-home-banner">
                     <Slider {...settings} className="slider">
                         {/* <img src={p01} alt="p01" /> */}
-                        <img src={pnew02} alt="p01" />
-                        <img src={pnew03} alt="p01" />
-                        <img src={pnew04} alt="p01" />
+                        <img src={banner01} alt="p01" />
+                        <img src={banner02} alt="p01" />
+                        <img src={banner03} alt="p01" />
                     </Slider>
                 </div>
-
+            
                 <div className="App-home-aboutus">
                     <div className="title">关于九亩花田</div>
                     <img src={about} alt="" style={{ width: "100%", height: "100%", marginTop: 20 }} />
@@ -177,7 +181,7 @@ export default class Home extends Component {
                                     <img src={rnew04} alt="p01" style={{ width: imgWidth }} />
                                     <p className="normal-text" style={{ width: imgWidth }}>花样年华</p>
                                 </div>
-                                
+
                             </Slider>
                         </div>
                     </div>
@@ -241,7 +245,7 @@ export default class Home extends Component {
                     </div>
                 </div> */}
 
-                <div className="App-home-aboutus top20">
+                <div className="App-home-aboutus top40">
                     <div className="title">关于本源</div>
                     <div className="tel content normal-text normal-color">
                         <p>广州本源健康产业有限公司，是一家多元化发展的企业，涉猎四大产业：餐饮连锁产业、餐饮原料产业、茶业产业、美妆服务产业。公司创办已有20多年历史，并于2015年在广州股权交易中心挂牌上市。公司本着“万物之本，包罗万象，源源不断”的品牌理念，以“上善若水“为品牌内涵，对产品严格品控，层层把关，致力于为消费者提供健康、有品质的生活。 2015年 本源集团着手新中式健康茶饮技术研发、茶饮品牌运营策划及茶饮技术团队建设，历时两年，2017年本源新中式健康茶饮品牌”九亩花田 ” 正式投入市场，开启中国茶饮5.0时代。本源人将以不变的执着和情怀，勇往向前，谱写新的华章。</p>
@@ -249,7 +253,7 @@ export default class Home extends Component {
                     <img src={aboutus} alt="" style={{ width: "100%", height: "100%" }} />
                 </div>
 
-                <div className="App-home-news">
+                {/* <div className="App-home-news">
                     <div className="title">新闻资讯</div>
 
                     <img style={{ width: "100%", height: "100%", marginTop: 20 }} alt="" src={news01} />
@@ -270,8 +274,23 @@ export default class Home extends Component {
                         <p className="middle-text">软欧包为什么这么火，九亩花田为你说答案</p>
                         <p className="normal-text tel">如今，随着人们的生活水平不断提高，消费观念也在不断的提升，特别是在吃这方面，人们不再像以前那样， 只求吃得饱，而是更讲究如何吃得好，对食物的口感和健康品质有着绝对的挑剔，所以， 像软欧包这种面包中的劳斯莱斯，一经推出，就受到大众的强烈追捧...<Link to={path3} className="anchar-link">查看详情</Link></p>
                     </div>
+                </div> */}
+                <p className="title  fftitle top40">
+                    联系我们
+                </p>
+                <div style={{ paddingLeft: 20, paddingRight: 20 }}>
+                    <a href="http://j.map.baidu.com/QC0bP"><img src={map} alt="" className="fullimg"/></a>
                 </div>
+                <p className="normal-text normal-color" style={{ fontSize: 18}}>
+                全球城市合伙人招募热线
+                </p>
 
+                <h1 style={{ fontWeight: 'normal'}}>400 930 6667</h1>
+                <p className="normal-text normal-color">总机：020-86000678</p>
+                <p className="normal-text normal-color">传真：020-86000108</p>
+                <p className="normal-text normal-color">地址：中国.广州市白云区机场路1962号国际单位E栋602</p> 
+                    
+                
             </div>
         )
     }
