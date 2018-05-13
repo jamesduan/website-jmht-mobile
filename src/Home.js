@@ -183,7 +183,6 @@ export default class Home extends Component {
                                     <img src={rnew04} alt="p01" style={{ width: imgWidth }} />
                                     <p className="normal-text" style={{ width: imgWidth }}>花样年华</p>
                                 </div>
-
                             </Slider>
                         </div>
                     </div>
