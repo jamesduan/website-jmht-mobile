@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Link, Redirect, Switch } from 'react-router-dom'
-import pbanner from './images/p-banner.png'
+// import pbanner from './images/p-banner.png'
 // import p01 from './images/p01.jpg'
 // import p02 from './images/p02.jpg'
 // // import p03 from './images/p03.jpg'

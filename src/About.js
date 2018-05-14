@@ -36,11 +36,7 @@ const Intro = () => {
 const Evolution = () => {
     return (
         <div className="sub-container">
-            <div className="normal-text normal-color tel">
-            从创业肇端，到发展壮大，本源健康产业一路求索，一路向往。
-            公司本着“万物之本，包罗万象，源源不断”的品牌理念。
-            以“大善若水“为品牌内涵，对产品严格品控，层层把关，为消费者提供天然、健康的品质生活。
-            20多年，本源一直用心努力做好一件事，20多年，本源因为专注所以专业，20多年，本源因为专业所以领先。</div>
+            <p className="normal-text normal-color tel tei">从创业肇端，到发展壮大，本源健康产业一路求索，一路向往。公司本着“万物之本，包罗万象，源源不断”的品牌理念。以“大善若水“为品牌内涵，对产品严格品控，层层把关，为消费者提供天然、健康的品质生活。20多年，本源一直用心努力做好一件事，20多年，本源因为专注所以专业，20多年，本源因为专业所以领先。</p>
             <div className="line">
                 <p className="time normal-text normal-color">2018年</p>
                 <p className="event normal-text normal-color">“九亩花田”品牌正式面向全球市场招募城市合伙人，寻求战略合作伙伴。</p>

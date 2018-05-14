@@ -447,7 +447,7 @@ $tabsback: #fafafa;
     }
 }
 
-$tabs-height: 45px;
+$tabs-height: 56px;
 
 @mixin tabs-item {
     @media (min-width: 320px) {
@@ -463,7 +463,7 @@ $tabs-height: 45px;
         width: 90px;
         font-size: 15px;
     }
-    height: $tabs-height;
+    height: 50px;
     float: left;
     @include row();
     justify-content: center;
@@ -474,6 +474,7 @@ $tabs-height: 45px;
 .tabs {
     background: $tabsback;
     height: $tabs-height;
+    // overflow: hidden;
     // @include topmove();
 
     .link {
@@ -493,7 +494,7 @@ $tabs-height: 45px;
 }
 
 .banner {
-    margin: 65px auto;
+    margin-top: 65px;
     width: 100%;
     height: 100%;
 }
@@ -544,3 +545,7 @@ $tabs-height: 45px;
 .tei { text-indent: 2em }
 
 .border { border: 1px solid black;}
+
+.slick-next { display: none; width: 0; height: 0}
+.slick-next::before { width: 0; height: 0; display: none;}
+.slick-prev { display: none; width: 0; height: 0}
