@@ -70,7 +70,7 @@ class App extends Component {
         </Switch>
 
         <div className="App-footer normal-text normal-color">
-          <p>©2008-2018 广州本源健康产业有限公司 版权所有</p>
+          <p>广州本源健康产业有限公司©2008-2018 粤ICP备12042485号-3</p>
         </div>
       </div>
     );
